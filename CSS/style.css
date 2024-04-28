@@ -38,23 +38,22 @@ h1 {
     color: white;
     font-size: 20px;
     display: grid;
-    align-items: top;
     grid-template-columns: 350px 400px ;
     column-gap: 10px;
 }
 
-.heroRectangle {
-    background-color: black;
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    top: 250px;
-    left: 490px;
+.box {
+    background-color: rgb(7, 10, 8);
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .visualSkills {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .skills {
@@ -84,3 +83,20 @@ h1 {
     width: 120px;
     background-color: white;
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .visualSkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5px;
+    } 
+ 
+     .heroSection {
+          display: grid;
+          grid-template-columns: 1fr;
+     }
+ 
+     h1 {
+         font-size: 50px;
+     }
+ }
